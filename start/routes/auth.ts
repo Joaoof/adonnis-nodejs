@@ -1,6 +1,6 @@
 import Route from '@ioc:Adonis/Core/Route'
 
 Route.group(() => {
-  Route.post('/auth', 'AuthController.store')
-  Route.delete('/auth', 'AuthController.destroy')
+  Route.post('/', 'AuthController.store')
+  Route.delete('/', 'AuthController.destroy')
 }).prefix('/auth')
