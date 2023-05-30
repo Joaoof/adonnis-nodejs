@@ -9,5 +9,7 @@ export class StoreValidator {
     content: schema.string({ trim: true }),
   })
 
-  public messages: CustomMessages = {}
+  public messages: CustomMessages = {
+    required: 'Este campo é obrigatório',
+  }
 }
